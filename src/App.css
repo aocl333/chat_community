@@ -1,0 +1,30 @@
+.no-scroll *::-webkit-scrollbar {
+    display: none;
+}
+
+.theme-main {
+    width: 13px;
+    height: 26px;
+}
+
+.theme-sub {
+    width: 13px;
+    height: 26px;
+}
+
+.theme-box {
+    cursor: pointer;
+    overflow: hidden;
+    width: 26px;
+    height: 26px;
+    border-radius: 3px;
+    display: flex;
+}
+.upload-name::file-selector-button {
+    width: 150px;
+    height: 30px;
+    background: #fff;
+    border: 1px solid rgb(77,77,77);
+    border-radius: 10px;
+    cursor: pointer;
+}
