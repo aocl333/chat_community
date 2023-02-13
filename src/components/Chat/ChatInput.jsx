@@ -19,7 +19,7 @@ import {
 } from "firebase/database";
 import { useSelector } from "react-redux";
 import { Picker } from "emoji-mart";
-import "emoji-mart/css/emoji-mart.css";
+import 'emoji-mart/css/emoji-mart.css'
 import ImageModal from "../Modal/ImageModal";
 function ChatInput() {
   const { channel, user } = useSelector((state) => state);
