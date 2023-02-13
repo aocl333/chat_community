@@ -14,6 +14,7 @@ import { useSelector } from "react-redux";
 import "../firebase";
 import { signOut, getAuth } from "firebase/auth";
 import ProfileModal from "./Modal/ProfileModal";
+import Logo from '../asset/img/logo.svg';
 function Header() {
   const { user, theme } = useSelector((state) => state);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -53,9 +54,12 @@ function Header() {
           }}
         >
           <Box sx={{ display: "flex" }}>
-            <TagIcon />
+            <TagIcon style={{ marginTop: "3px" }}/>
             <Typography variant="h6" component="div">
-              SLACK
+              <img
+                alt="message"
+                src={Logo}
+                width={90}/>
             </Typography>
           </Box>
           <Box>
